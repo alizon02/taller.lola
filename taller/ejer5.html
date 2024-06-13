@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+        //notas
+       let nota1 = prompt("ingrese la primera nota");
+        let nota2 = prompt("ingrese la segunda  nota");
+        let nota3 = prompt("ingrese la tercera nota");
+
+
+        nota1 = parseFloat(nota1);
+        nota2 = parseFloat(nota2);
+        nota3 = parseFloat(nota3);
+
+        let promedio1 = nota1 + nota1 + nota3
+        let promedio2 = promedio1/3
+
+
+        document.write("su promedio es");
+        document.write(promedio2);
+        
+        if (promedio2 >= 3) {
+            document.write("Promocionado");
+        } else {
+            document.write("No promocionado");
+        }
+//clave
+
+
+let clave1 = prompt("ingrese su clave");
+let clave2 = prompt("verificacion de clave");
+
+clave1 = parseFloat (clave1);
+clave2 = parseFloat (clave2);
+
+if (clave1 == clave2) {
+            document.write("clave correcta");
+        } else {
+            document.write("no coinciden");
+        }
+    </script>
+
+</body>
+</html>
+    

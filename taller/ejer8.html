@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+        /*Confeccionar un programa que permita cargar un número entero positivo de hasta 
+        tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.*/
+
+        function determinarCifras() {
+    
+    let numero = parseInt(prompt("Ingrese un número entero positivo de hasta tres cifras:"));
+
+    if (numero >= 0 && numero <= 9) {
+        console.log(`El número ${numero} tiene 1 cifra.`);
+    } else if (numero >= 10 && numero <= 99) {
+        console.log(`El número ${numero} tiene 2 cifras.`);
+    } else if (numero >= 100 && numero <= 999) {
+        console.log(`El número ${numero} tiene 3 cifras.`);
+    } else {
+        console.log("El número ingresado no es válido. Debe ser un número entero positivo de hasta tres cifras.");
+    }
+}
+
+
+determinarCifras();
+
+
+/* De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: nombre del postulante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó correctamente. Se pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo según el porcentaje de respuestas correctas que ha obtenido, y sabiendo que:
+Nivel superior: Porcentaje>=90%.
+Nivel medio: Porcentaje>=75% y <90%.
+Nivel regular: Porcentaje>=50% y <75%.
+Fuera de nivel: Porcentaje<50%.*/
+function determinarNivel() {
+    
+    let nombre = prompt("Ingrese el nombre del postulante:");
+    let totalPreguntas = parseInt(prompt("Ingrese la cantidad total de preguntas realizadas:"));
+    let preguntasCorrectas = parseInt(prompt("Ingrese la cantidad de preguntas respondidas correctamente:"));
+
+   
+    let porcentajeCorrectas = (preguntasCorrectas / totalPreguntas) * 100;
+
+    let nivel;
+    if (porcentajeCorrectas >= 90) {
+        nivel = "Nivel superior";
+    } else if (porcentajeCorrectas >= 75 && porcentajeCorrectas < 90) {
+        nivel = "Nivel medio";
+    } else if (porcentajeCorrectas >= 50 && porcentajeCorrectas < 75) {
+        nivel = "Nivel regular";
+    } else {
+        nivel = "Fuera de nivel";
+    }
+
+   
+    console.log(`El postulante ${nombre} ha obtenido un porcentaje de respuestas correctas del ${porcentajeCorrectas}%, por lo tanto su nivel es: ${nivel}`);
+}
+
+
+determinarNivel();
+
+    </script>
+
+</body>
+</html>
+    

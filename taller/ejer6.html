@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+/*Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar su
+ suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.*/
+
+let nu1 = prompt ("ingrese el primer numero");
+let nu2 = prompt ("ingrese el sugundo numero");
+
+nu1 = parseFloat(nu1);
+nu2 = parseFloat(nu2);
+
+;
+
+if (nu1 > nu2) {
+            let suma = nu1 + nu2;
+            let diferencia = nu1 - nu2;
+            document.write("la suma es:");
+            document.write(suma3);
+            document.write("la diferencia es:");
+            document.write(diferencia);
+        } else {
+            let producto2 = nu1 * nu2;
+            let division = nu1 / nu2;
+            document.write("el producto es");
+            document.write(producto2);
+            if (nu2 !== 0) {
+                document.write("la division es");
+                document.write(division);
+            } else {
+                document.write("La división entre cero no está definida.");
+            }
+        }
+
+        /*Se ingresan tres notas de un alumno, si el
+         promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'.*/
+
+
+         let not1 = prompt("ingrese la primera nota");
+        let not2 = prompt("ingrese la segunda  nota");
+        let not3 = prompt("ingrese la tercera nota");
+
+
+        not1 = parseFloat(not1);
+        not2 = parseFloat(not2);
+        not3 = parseFloat(not3);
+
+        let promedio3 = not1 + not1 + not3
+        let promedio4 = promedio3/3
+
+
+        document.write("su promedio es");
+        document.write(promedio3);
+        
+        if (promedio3 >= 4) {
+            document.write("regular");
+        } else {
+            document.write("reprobado");
+        }
+
+         //numero entero
+
+         let entero = parseInt(prompt("Ingrese un número positivo de uno o dos dígitos (1..99):"), 10);
+if (entero >= 1 && entero <= 99) {
+    
+    if (entero < 10) {
+        document.write(`El número ${entero} tiene un dígito.`);
+    } else {
+        document.write(`El número ${entero} tiene dos dígitos.`);
+    }
+} else {
+    document.write("Por favor, ingrese un número válido entre 1 y 99.");
+}
+
+    </script>
+
+</body>
+</html>
+    

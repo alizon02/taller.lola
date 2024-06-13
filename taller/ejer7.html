@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+
+        //Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+
+        let number1 = prompt("ingrese el 1 numero");
+        let number2 = prompt("ingrese el 2 numero");
+        let number3 = prompt("ingrese el 3 numero");
+
+
+        number1 = parseFloat(number1);
+        number2 = parseFloat(number2);
+        number3 = parseFloat(number3);
+
+        if (number1 !== number2 && number1 !== number3 && number2 !== number3) {
+           
+            let mayor = Math.max(number1, number2, number3);
+
+            
+            document.write(`El mayor de los tres números es: ${mayor}`);
+        } else {
+            document.write("Por favor, ingrese tres números distintos.");
+        }
+
+
+        /*Se ingresa por teclado un valor entero, mostrar una leyenda 
+        que indique si el número es positivo, cero o negativo.*/
+
+
+        let va = prompt("ingrese el  valor");
+        va = parseFloat(va);
+
+
+        if ( va > 0) {
+            document.write("el numero es positivo");
+        } else {
+            if (va < 0) {
+            document.write("el numero es negativo");
+            } else {
+                document.write("el numero es cero");
+            }
+        
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
+    
